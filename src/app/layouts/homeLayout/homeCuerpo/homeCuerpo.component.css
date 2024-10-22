@@ -1,0 +1,63 @@
+header{
+  background-color: #000;
+  box-sizing: border-box;
+  display: flex;
+  font-family: "DM Sans", sans-serif;
+}
+
+.responsive-box {
+  background-color: #4CAF50;
+  padding: 2vw;
+  border-radius: 2.5vw;
+  font-weight: 600;
+  box-sizing: border-box;
+  padding: 3vw;
+  text-transform: uppercase;
+  width: 65vw; /* La caja será el 50% del ancho de la pantalla */
+  background: linear-gradient(180deg, #FF0303 0%, #FFC903 100%);
+  line-height: 0.80;
+}
+
+.responsive-box {
+  font-size: 6.5vw;
+  color: white;
+}
+.subinfo{
+  font-size: 2.5vw;
+  line-height: 0.85;
+  margin: 0;
+  margin-top: 6.5vw;
+}
+.responsive-logo-play{
+  width: 35vw;
+}
+.responsive-logo-play{
+  display: flex;
+  flex-direction: column;
+}
+.logo{
+  display: block;
+  width: 70%;
+  box-sizing: border-box;
+  padding: 5%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.play-video{
+  width: 15vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5vw;
+  height: 15vw;
+  border-radius: 50%;
+  border: 0;
+  margin-left: auto;
+  background: #CD0F0F;
+  font-size: 1.2vw;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+}
+

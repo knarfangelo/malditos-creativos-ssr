@@ -1,0 +1,28 @@
+nav{
+  font-family: "Russo One", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 0 45px;
+  font-size: 32px;
+}
+h1{
+  font-size: 1em;
+}
+ul{
+  font-size: 0.5em;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+ul, li{
+  list-style: none;
+}
+ul{
+  display: flex;
+  gap: 80px;
+}
