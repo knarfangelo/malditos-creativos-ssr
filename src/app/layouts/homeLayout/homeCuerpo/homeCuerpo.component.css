@@ -2,7 +2,9 @@ header{
   background-color: #000;
   box-sizing: border-box;
   display: flex;
-  font-family: "DM Sans", sans-serif;
+  width: 100%;
+  font-family: "DM Sans";
+  padding: 0.8vw;
 }
 
 .responsive-box {
@@ -16,6 +18,7 @@ header{
   width: 65vw; /* La caja será el 50% del ancho de la pantalla */
   background: linear-gradient(180deg, #FF0303 0%, #FFC903 100%);
   line-height: 0.80;
+  letter-spacing: -0.30vw;
 }
 
 .responsive-box {
@@ -23,41 +26,50 @@ header{
   color: white;
 }
 .subinfo{
-  font-size: 2.5vw;
+  font-size: 2.0vw;
   line-height: 0.85;
+  letter-spacing: -0.0vw;
   margin: 0;
   margin-top: 6.5vw;
 }
 .responsive-logo-play{
-  width: 35vw;
-}
-.responsive-logo-play{
+  width: 32vw;
   display: flex;
   flex-direction: column;
+  align-items: end;
+  overflow: hidden;
+  position: relative;
 }
 .logo{
   display: block;
-  width: 70%;
+  width: 100%;
   box-sizing: border-box;
-  padding: 5%;
+  padding: 0 5%;
   left: 0;
   right: 0;
   margin: auto;
 }
+.contenedor-play-video{
+  width: 15vw;
+  height: 15vw;
+}
 .play-video{
   width: 15vw;
   display: flex;
+  position: absolute;
+  overflow: hidden;
   align-items: center;
   justify-content: center;
   gap: 0.5vw;
   height: 15vw;
   border-radius: 50%;
   border: 0;
-  margin-left: auto;
   background: #CD0F0F;
   font-size: 1.2vw;
   font-weight: 600;
   color: #fff;
+  padding: 0;
+  cursor: pointer;
   text-transform: uppercase;
 }
 

@@ -7,7 +7,7 @@ import { trigger, style, animate, transition, state } from '@angular/animations'
   standalone: true,
   imports: [CommonModule],
   template: `
-    <header *ngIf="isBrowser">
+    <header>
       <div class="responsive-box">
         Lideres en <br> estrategias<br>de marketing<br>digitalpara<br>tu empresa
         <br>
@@ -15,12 +15,13 @@ import { trigger, style, animate, transition, state } from '@angular/animations'
       </div>
       <div class="responsive-logo-play">
         <img class="logo" src="logo-malditos-creativos.svg" alt="logo-de-malditos-creativos">
+        <div class="contenedor-play-video">
         <button class="play-video" [@flyInOut]>
           <span class="button-text">Play video</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="1.1vw" height="1.1vw" viewBox="0 0 8 11" fill="none">
             <path d="M0.0598145 0.329834L7.16981 5.30483L0.0598145 10.2798V0.329834Z" fill="white"/>
           </svg>
-        </button>
+        </button></div>
       </div>
     </header>
   `,
@@ -29,7 +30,7 @@ import { trigger, style, animate, transition, state } from '@angular/animations'
     trigger('flyInOut', [
       state('in', style({ transform: 'translateX(0) rotate(0deg)' })),
       transition('void => *', [
-        style({ transform: 'translateX(-120%) rotate(0deg)' }),
+        style({ transform: 'translateX(-110%) rotate(0deg)' }),
         animate(2000, style({ transform: 'translateX(0) rotate(360deg)' }))
       ]),
       transition('* => void', [

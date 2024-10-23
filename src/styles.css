@@ -24,6 +24,14 @@
     margin: 0;
   }
   
+  @font-face {
+    font-family: 'DM Sans';
+    src: url('/fuentes/DM_Sans/static/DMSans-Regular.ttf') format('truetype'); /* o .otf */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  
   /**
    * Render the `main` element consistently in IE.
    */
