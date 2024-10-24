@@ -10,6 +10,8 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   template: `
     <header>
       <h1>Conoce <br>nuestro <br> estudio.</h1>
+      <h2>Estandares mas altos del mercado</h2>
+      <img class="estudio" src="estudio/estudio.webp" alt="estudio choose agencia">
     </header>
   `,
   styleUrl: './homeEstudio.component.css',

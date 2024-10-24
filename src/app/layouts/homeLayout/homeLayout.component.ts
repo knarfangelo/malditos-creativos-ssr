@@ -8,6 +8,7 @@ import { HomeCarruselGuiaComponent } from "./homeCarruselGuia/homeCarruselGuia.c
 import { HomeNuestrosClientesComponent } from "./homeNuestrosClientes/homeNuestrosClientes.component";
 import { HomeNuestroEquipoComponent } from "./homeNuestroEquipo/homeNuestroEquipo.component";
 import { HomeRedesSocialesComponent } from "./homeRedesSociales/homeRedesSociales.component";
+import { HomeEstudioComponent } from "./homeEstudio/homeEstudio.component";
 
 @Component({
   selector: 'app-home-layout',
@@ -21,7 +22,8 @@ import { HomeRedesSocialesComponent } from "./homeRedesSociales/homeRedesSociale
     HomeCarruselGuiaComponent,
     HomeNuestrosClientesComponent,
     HomeNuestroEquipoComponent,
-    HomeRedesSocialesComponent
+    HomeRedesSocialesComponent,
+    HomeEstudioComponent
 ],
   template: `
     <app-navegacion></app-navegacion>
@@ -32,6 +34,7 @@ import { HomeRedesSocialesComponent } from "./homeRedesSociales/homeRedesSociale
     <app-home-nuestros-clientes></app-home-nuestros-clientes>
     <app-home-nuestro-equipo></app-home-nuestro-equipo>
     <app-home-redes-sociales></app-home-redes-sociales>
+    <app-home-estudio></app-home-estudio>
   `,
   styleUrl: './homeLayout.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
