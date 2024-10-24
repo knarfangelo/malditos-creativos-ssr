@@ -9,6 +9,7 @@ import { HomeNuestrosClientesComponent } from "./homeNuestrosClientes/homeNuestr
 import { HomeNuestroEquipoComponent } from "./homeNuestroEquipo/homeNuestroEquipo.component";
 import { HomeRedesSocialesComponent } from "./homeRedesSociales/homeRedesSociales.component";
 import { HomeEstudioComponent } from "./homeEstudio/homeEstudio.component";
+import { HomeEquiposGrabacionComponent } from "./homeEquiposGrabacion/homeEquiposGrabacion.component";
 
 @Component({
   selector: 'app-home-layout',
@@ -23,7 +24,8 @@ import { HomeEstudioComponent } from "./homeEstudio/homeEstudio.component";
     HomeNuestrosClientesComponent,
     HomeNuestroEquipoComponent,
     HomeRedesSocialesComponent,
-    HomeEstudioComponent
+    HomeEstudioComponent,
+    HomeEquiposGrabacionComponent
 ],
   template: `
     <app-navegacion></app-navegacion>
@@ -35,6 +37,7 @@ import { HomeEstudioComponent } from "./homeEstudio/homeEstudio.component";
     <app-home-nuestro-equipo></app-home-nuestro-equipo>
     <app-home-redes-sociales></app-home-redes-sociales>
     <app-home-estudio></app-home-estudio>
+    <app-home-equipos-grabacion></app-home-equipos-grabacion>
   `,
   styleUrl: './homeLayout.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

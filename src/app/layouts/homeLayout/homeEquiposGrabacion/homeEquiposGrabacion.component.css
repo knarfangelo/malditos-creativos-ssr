@@ -1,0 +1,42 @@
+header{
+  width: 100%;
+  font-family: 'DM Sans', sans-serif;
+  background-color: #000;
+}
+
+main{
+  width: 100%;
+  display: flex;
+  gap: 0.5vw;
+}
+h1, h2 , p{
+  margin: 0;
+  padding: 0;
+}
+
+.flechas{
+  display: flex;
+  width: 15%;
+  background-color: #fff;
+  gap: 5vw;
+  border-radius: 5vw;
+  align-items: center;
+  justify-content: center;
+}
+.flechas button {
+  background-color: #fff;
+  border: 0;
+}
+
+.titulo{
+  width: 84%;
+  height: 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 5vw;
+}
+.titulo h1 {
+
+}

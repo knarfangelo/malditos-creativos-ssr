@@ -9,8 +9,9 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   ],
   template: `
     <header>
+      <div class="info">
       <h1>Conoce <br>nuestro <br> estudio.</h1>
-      <h2>Estandares mas altos del mercado</h2>
+      <h2>Estandares mas altos del mercado</h2></div>
       <img class="estudio" src="estudio/estudio.webp" alt="estudio choose agencia">
     </header>
   `,
