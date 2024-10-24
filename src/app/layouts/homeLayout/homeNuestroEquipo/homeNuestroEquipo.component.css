@@ -1,0 +1,56 @@
+header{
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  padding: 1vw;
+  gap: 0.5vw;
+  padding-top: 0;
+  padding-bottom: 0.5vw;
+  font-family: 'DM Sans', sans-serif;
+  background-color: #000;
+}
+
+h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+.equipo{
+  width: 48.25vw;
+  height: 48.25vw;
+  border-radius: 3vw;
+}
+
+main {
+  width: 48.25vw;
+  height: 48.25vw;
+  background: #0319FF;
+  border-radius: 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 3vw;
+  color: #fff;
+}
+
+.punto {
+  width: 1vw;
+  height: 1vw;
+  background-color: #fff;
+  border-radius: 50%;
+}
+main h1 {
+  font-size: 1.5vw;
+  text-transform: uppercase;
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+}
+main h2 {
+  font-size: 3.0vw;
+  text-transform: uppercase;
+  line-height: 0.9;
+}
+
+

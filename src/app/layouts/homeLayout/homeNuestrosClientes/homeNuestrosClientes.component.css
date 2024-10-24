@@ -1,0 +1,144 @@
+header{
+  display: flex;
+  width: 100%;
+  gap: 0.5vw;
+  box-sizing: border-box;
+  padding: 1vw;
+  padding-top: 0;
+  padding-bottom: 0.5vw;
+  background-color: #000;
+  font-family: "DM Sans", sans-serif;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  width: 47vw;
+  height: 49.5vw;
+  gap: 0.5vw;
+  
+}
+main button{
+  width: 100%;
+  height: 8.5vw;
+  padding: 0;
+  text-transform: uppercase;
+}
+.punto {
+  display: block;
+  width: 1vw;
+  height: 1vw;
+  border-radius: 50%;
+  background-color: #000;
+}
+h1, p,h2 {
+  margin: 0;
+  padding: 0;
+}
+.info{
+  display: flex;
+  flex-direction: column;
+  height: 40.5vw;
+  background-color: #FFC903;
+  border-radius: 3vw;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 3vw;
+}
+
+.marcas{
+  border-radius: 3vw;
+  background-color: #fff;
+  width: 49.5vw;
+  height: 49.5vw;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-template-columns:8.5vw 8.5vw 8.5vw 8.5vw;
+  grid-template-rows: 5vw 5vw 5vw 5vw;
+  gap: 3vw 1.5vw;
+}
+.marcas img{
+  width: 8.5vw;
+  height: 5vw;
+  object-fit: contain;
+  object-position: center;
+}
+
+
+.info p, .info h1 {
+  text-transform: uppercase;
+}
+.info h1 {
+  display: flex;
+  align-items: center;
+  gap: 1.5vw;
+  font-size: 1.5vw;
+  font-weight: 800;
+
+}
+.info p {
+  font-size: 3.5vw;
+  font-weight: 600;
+  line-height: 0.9;
+}
+main button {
+  width: 20vw;
+  font-size: 1.5vw;
+  color: #CD0F0F;
+  font-weight: 700;
+  background: #FFF;
+  border-radius: 10vw;
+  border: 0; 
+}
+
+.cliente{
+  box-sizing: border-box;
+  padding: 1vw;
+  padding-top: 0;
+  padding-bottom: 0.5vw;
+  display: flex;
+  width: 100%;
+  gap: 0.5vw;
+  background: #000;
+  font-family: 'DM Sans', sans-serif;
+  color: #CD0F0F;
+}
+.neutroyt{
+  width: 69vw;
+  background-color: #FFF;
+  border-radius: 3vw;
+  box-sizing: border-box;
+  padding: 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.face{
+  width: 27.5vw;
+  border-radius: 3vw;
+}
+.face img{
+  width: 100%;
+  border-radius: 3vw;
+  height: 100%;
+  object-position: center;
+}
+.neutroyt h1 {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  font-size: 1.5vw;
+}
+.neutroyt .punto {
+  background-color: #CD0F0F;
+}
+.neutroyt h2 {
+  font-size: 5vw;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 0.8;
+  letter-spacing: -0.3vw;
+}

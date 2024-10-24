@@ -5,6 +5,9 @@ import { HomeCuerpoComponent } from "./homeCuerpo/homeCuerpo.component";
 import { HomeServiciosComponent } from "./homeServicios/homeServicios.component";
 import { HomeVideoComponent } from "./homeVideo/homeVideo.component";
 import { HomeCarruselGuiaComponent } from "./homeCarruselGuia/homeCarruselGuia.component";
+import { HomeNuestrosClientesComponent } from "./homeNuestrosClientes/homeNuestrosClientes.component";
+import { HomeNuestroEquipoComponent } from "./homeNuestroEquipo/homeNuestroEquipo.component";
+import { HomeRedesSocialesComponent } from "./homeRedesSociales/homeRedesSociales.component";
 
 @Component({
   selector: 'app-home-layout',
@@ -15,7 +18,10 @@ import { HomeCarruselGuiaComponent } from "./homeCarruselGuia/homeCarruselGuia.c
     HomeCuerpoComponent,
     HomeServiciosComponent,
     HomeVideoComponent,
-    HomeCarruselGuiaComponent
+    HomeCarruselGuiaComponent,
+    HomeNuestrosClientesComponent,
+    HomeNuestroEquipoComponent,
+    HomeRedesSocialesComponent
 ],
   template: `
     <app-navegacion></app-navegacion>
@@ -23,6 +29,9 @@ import { HomeCarruselGuiaComponent } from "./homeCarruselGuia/homeCarruselGuia.c
     <app-home-servicios></app-home-servicios>
     <app-home-video></app-home-video>
     <app-home-carrusel-guia></app-home-carrusel-guia>
+    <app-home-nuestros-clientes></app-home-nuestros-clientes>
+    <app-home-nuestro-equipo></app-home-nuestro-equipo>
+    <app-home-redes-sociales></app-home-redes-sociales>
   `,
   styleUrl: './homeLayout.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

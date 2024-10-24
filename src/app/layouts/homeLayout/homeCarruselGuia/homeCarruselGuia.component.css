@@ -3,9 +3,10 @@ header{
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  gap: 1vw;
+  gap: 0.5vw;
   padding: 1vw;
   padding-top: 0;
+  padding-bottom: 0.5vw;
   background-color: #000;
   font-family: 'MD Sans', sans-serif;
 }
@@ -18,7 +19,7 @@ h1 , h2 , p {
   gap: 0.5vw;
 }
 .slides-point {
-  width: 85%;
+  width: 84%;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
@@ -32,20 +33,16 @@ h1 , h2 , p {
 .slides-point .linea{
   width: 75vw;
   height: 0.2vw;
-  z-index: 1;
   position: absolute;
   z-index: 5;
   background-color: rgb(180, 180, 180);
 }
-.slides-point button{
-  width: 1vw;
-  height: 1vw;
-  border-radius: 50%;
-  border: 0;
-  background: #BB0B0B;
-  cursor: pointer;
-  z-index: 10;
+.contenedor-la{
+  width: 75vw;
+  height: 0.2vw;
+  position: absolute;
 }
+
 .slide-navigation{
   display: flex;
   width: 15%;
@@ -59,10 +56,15 @@ h1 , h2 , p {
   background-color: #fff;
   border: 0;
   cursor: pointer;
-  width: fit-content;
-  height: fit-content;
+  width: 2.5vw;
+  height: 2.5vw;
+  display: flex;
   padding: 0;
 }
+.swiper-guia {
+  pointer-events: auto; /* Asegúrate de que sea 'auto' */
+}
+
 swiper-container{
   width: 84.5%;
   height: 25vw;
@@ -76,6 +78,8 @@ swiper-container{
 swiper-slide{
   display: flex;
   gap: 8vw;
+  border-radius: 2vw;
+  background-color: #fff;
   box-sizing: border-box;
   padding: 3vw;
   padding-right: 8vw;
@@ -89,6 +93,11 @@ swiper-slide h1 {
   width: 25vw;
   color: #BB0B0B;
 }
+.active{
+  outline: 1vw solid #ffc8033a;
+  transition: width 0.5s ease-in-out; /* Animación suave */
+}
+
 swiper-slide h2 {
   text-transform: uppercase;
   width: 40vw;
@@ -109,4 +118,21 @@ swiper-slide h2 {
     height: 1vw;
     border-radius: 50%;
     background: #BB0B0B;
+}
+.punto-la{
+    display: block;
+    width: 1vw;
+    height: 1vw;
+    z-index: 10;
+    cursor: pointer;
+    border-radius: 50%;
+    background: #BB0B0B;
+}
+
+.slides-point .linea-activa {
+  position: absolute;
+  height: 0.2vw;
+  background-color: #BB0B0B;
+  z-index: 6;
+  transition: width 0.5s ease-in-out; /* Animación suave */
 }
