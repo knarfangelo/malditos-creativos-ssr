@@ -1,19 +1,18 @@
 nav{
-  font-family: "Russo One", sans-serif;
+  font-family: "Ruso One", sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #000;
   color: #fff;
   box-sizing: border-box;
-  padding: 0 45px;
-  font-size: 32px;
+  padding: 1vw 2vw;
 }
 h1{
-  font-size: 1em;
+  font-size: 1.5vw;
 }
 ul{
-  font-size: 0.5em;
+  font-size: 1vw;
 }
 a{
   text-decoration: none;
@@ -24,5 +23,5 @@ ul, li{
 }
 ul{
   display: flex;
-  gap: 80px;
+  gap: 2vw;
 }
