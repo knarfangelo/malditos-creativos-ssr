@@ -2,6 +2,13 @@ header{
   width: 100%;
   font-family: 'DM Sans', sans-serif;
   background-color: #000;
+  box-sizing: border-box;
+  padding: 1vw;
+  padding-top: 0;
+  padding-bottom: 0.5vw;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
 }
 
 main{
@@ -18,25 +25,83 @@ h1, h2 , p{
   display: flex;
   width: 15%;
   background-color: #fff;
-  gap: 5vw;
+  gap: 4vw;
   border-radius: 5vw;
   align-items: center;
   justify-content: center;
 }
 .flechas button {
   background-color: #fff;
+  display: flex;
   border: 0;
+  padding: 0;
+  width: 3vw;
+  height: 3vw;
+  cursor: pointer;
 }
 
 .titulo{
-  width: 84%;
+  width: 85%;
   height: 6vw;
+  font-size: 1.15vw;
+  color: #BB0B0B;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #fff;
   border-radius: 5vw;
 }
-.titulo h1 {
-
+swiper-container{
+  margin: 0;
+  margin-left: auto;
+  width: 85%;
+  border-radius: 3vw;
+}
+swiper-slide{
+  background-color: #fff;
+  display: flex;
+  box-sizing: border-box;
+  padding: 3vw;
+  border-radius: 3vw;
+  height: 25vw;
+}
+h1 {
+  color: #BB0B0B;
+}
+.contenedor{
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+  height: 100%;
+}
+.punto{
+  display: block;
+  width: 1vw;
+  height: 1vw;
+  border-radius: 50%;
+  background-color: #BB0B0B;
+}
+.contenedor h1 {
+  font-size: 1.5vw;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+.equipos{
+  width: 25vw;
+  border-radius: 2.5vw;
+}
+.descripcion{
+  font-size: 2vw;
+  display: flex;
+  color: #BB0B0B;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 5vw;
 }
