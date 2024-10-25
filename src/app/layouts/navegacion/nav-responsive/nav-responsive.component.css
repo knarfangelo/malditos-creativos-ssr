@@ -9,6 +9,13 @@ nav{
   align-items: center;
   justify-content: space-between;
   background-color: #000;
+  position: fixed;
+  z-index: 100;
+}
+.relleno{
+  display: flex;
+  width: 100%;
+  height: 20vw;
 }
 nav img{
   width: 10vw;
@@ -17,4 +24,34 @@ nav img{
 
 h1{
   color: #fff;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 80vw;
+  
+  height: 100vh;
+  position: fixed;
+  left: -100vw;
+  top: 0;
+  color: #fff;
+  background-color: #000;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  padding: 10vw;
+  transition: left 0.5s ease; /* Animación de transición */
+}
+ul.active {
+  left: 0;
+}
+ a{
+  color: #fff;
+  font-family: 'Ruso One', sans-serif;  
+  text-decoration: none;
+  
 }

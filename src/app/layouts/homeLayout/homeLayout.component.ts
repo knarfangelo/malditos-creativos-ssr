@@ -34,15 +34,15 @@ import { FooterComponent } from "../../components/footer/footer.component";
   template: `
     <app-navegacion></app-navegacion>
     <app-home-cuerpo></app-home-cuerpo>
-    <app-home-servicios></app-home-servicios>
+    <app-home-servicios id="servicios"></app-home-servicios>
     <app-home-video></app-home-video>
     <app-home-carrusel-guia></app-home-carrusel-guia>
-    <app-home-nuestros-clientes></app-home-nuestros-clientes>
-    <app-home-nuestro-equipo></app-home-nuestro-equipo>
+    <app-home-nuestros-clientes id="trabajo"></app-home-nuestros-clientes>
+    <app-home-nuestro-equipo id="equipo"></app-home-nuestro-equipo>
     <app-home-redes-sociales></app-home-redes-sociales>
     <app-home-estudio></app-home-estudio>
     <app-home-equipos-grabacion></app-home-equipos-grabacion>
-    <app-home-suscribirse></app-home-suscribirse>
+    <app-home-suscribirse id="contactanos"></app-home-suscribirse>
     <app-footer></app-footer>
   `,
   styleUrl: './homeLayout.component.css',

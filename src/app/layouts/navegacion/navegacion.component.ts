@@ -13,10 +13,10 @@ import { NavResponsiveComponent } from "./nav-responsive/nav-responsive.componen
     <nav>
       <h1>MALDITOS CREATIVOS</h1>
       <ul>
-        <li><a href="">NUESTRO TRABAJO</a></li>
-        <li><a href="">SERVICIOS</a></li>
-        <li><a href="">EQUIPO</a></li>
-        <li><a href="">CONTACTANOS</a></li>
+        <li><a href="#trabajo">NUESTRO TRABAJO</a></li>
+        <li><a href="#servicios">SERVICIOS</a></li>
+        <li><a href="#equipo">EQUIPO</a></li>
+        <li><a href="#contactanos">CONTACTANOS</a></li>
       </ul>
     </nav>
     <app-nav-responsive></app-nav-responsive>
