@@ -74,14 +74,36 @@ main p {
   flex-direction: column;
   gap: 1vw;
 }
-
+.flecha{
+  display: none;
+}
 @media (width < 800px){
 
   header{
     flex-direction: column;
     width: 100%;
   }
-
+  label{
+    position: relative;
+  }
+  .boton{
+    display: none;
+  }
+  .flecha{
+    display: block;
+    position: absolute;
+    right: 8.5vw;
+    top: 0vw;
+  }
+  .flecha{
+    background-color: #BB0B0B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+  }
   .cuadro-rojo{
     width: 100%;
     height: 85vw;
@@ -101,12 +123,12 @@ main p {
     font-size: 6vw;
   }
   input{
-    height: 15vw;
+    height: 19vw;
     padding-left: 5vw;
     border-radius: 10vw 0 0 10vw;
   }
   .boton{
-    height: 15vw;
+    height: 19vw;
     border-radius: 0 10vw 10vw 0;
   }
   main p{
