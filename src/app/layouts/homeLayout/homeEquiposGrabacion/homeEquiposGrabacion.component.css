@@ -92,6 +92,7 @@ h1 {
   display: flex;
   align-items: center;
   gap: 1vw;
+  width:95%;
 }
 .equipos{
   width: 25vw;
