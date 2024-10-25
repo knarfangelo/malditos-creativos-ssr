@@ -18,7 +18,7 @@ main{
   gap: 0.5vw;
   
 }
-main button{
+main button, main a{
   width: 100%;
   height: 8.5vw;
   padding: 0;
@@ -82,8 +82,12 @@ h1, p,h2 {
   font-weight: 600;
   line-height: 0.9;
 }
-main button {
+main button, main a {
   width: 20vw;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 1.5vw;
   color: #CD0F0F;
   font-weight: 700;
@@ -146,10 +150,11 @@ main button {
   display: none;
 }
 @media (width < 800px){
-  button{
+  button, main .button-1{
     display: none;
   }
   .button-2 {
+    text-decoration: none;
     display: flex;
     border: 0;
     padding: 0;

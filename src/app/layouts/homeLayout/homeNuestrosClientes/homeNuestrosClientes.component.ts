@@ -15,7 +15,7 @@ import { RouterLink } from '@angular/router';
         <div class="info">
         <h1><span class="punto"></span>Nuestros clientes</h1>
         <p>Más de 10 años de <br> experiencia en <br> todo tipo de <br> industrias</p></div>
-        <button routerLink="/#contactanos">Contáctanos</button>
+        <a class="button-1" href="#contactanos">Contáctanos</a>
       </main>
       <section class="marcas">
         <img src="/empresas/1-speed-demons.webp" alt="speed demos">
@@ -35,7 +35,7 @@ import { RouterLink } from '@angular/router';
         <img src="/empresas/15-intercorp.webp" alt="Intercorp">
         <img src="/empresas/16-cesar-vallejo.webp" alt="Universidad César Vallejo">
       </section>
-      <button class="button-2">Contáctanos</button>
+      <a class="button-2" href="#contactanos">Contáctanos</a>
     </header>
     <section class="cliente">
       <div class="neutroyt">
