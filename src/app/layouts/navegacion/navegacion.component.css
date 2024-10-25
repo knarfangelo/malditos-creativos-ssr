@@ -25,14 +25,16 @@ ul{
   display: flex;
   gap: 2vw;
 }
-nav-responsive{
+
+app-nav-responsive{
   display: none;
 }
 @media (width < 800px){
   nav{
     display: none;
   }
-  nav-responsive{
+  app-nav-responsive{
     display: flex;
+    width: 100%;
   }
 }

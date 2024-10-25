@@ -39,7 +39,9 @@ h1, h2 , p{
   height: 3vw;
   cursor: pointer;
 }
-
+.flechas-2{
+  display: none;
+}
 .titulo{
   width: 85%;
   height: 6vw;
@@ -110,6 +112,9 @@ h1 {
   main{
     flex-direction: column;
 
+  }
+  .flechas-2{
+    display: flex;
   }
   .flechas{
     display: none;
