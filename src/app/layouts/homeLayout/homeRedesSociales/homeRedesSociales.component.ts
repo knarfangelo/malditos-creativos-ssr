@@ -10,7 +10,9 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   template: `
     <header>
       <main>
-        <h1>estamos en todas <br> las plataformas</h1>
+        <div class="contenedor">
+        <span class="punto"></span>
+        <h1>estamos en todas <br> las plataformas</h1></div>
         <h2>ESTAMOS ORIENTADOS A LOS RESULTADOS. <br>
         SEA CUAL SEA LA PLATAFORMA </h2>
       </main>
@@ -21,6 +23,8 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
         <img src="redes/youtube.svg" alt="youtube malditos creativos">
         <img src="redes/xcorp.svg" alt="twitter malditos creativos">
         <img src="redes/instagram.svg" alt="instagram malditos creativos">
+        <img src="redes/vimeo.svg" alt="vimeo malditos creativos">
+        <img src="redes/kick.svg" alt="kick malditos creativos">
       </section>
     </header>
   `,

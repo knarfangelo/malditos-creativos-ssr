@@ -52,5 +52,41 @@ main h2 {
   text-transform: uppercase;
   line-height: 0.9;
 }
+.contenedor{
+  display: flex;
+  gap: 1vw;
+}
 
-
+@media (width < 800px){
+  header{
+    flex-direction: column;
+  }
+  .equipo {
+    width: 100%;
+    height: auto;
+    border-radius: 5vw;
+  }
+  main {
+    width: 100%;
+    height: 85vw;
+    border-radius: 5vw;
+    padding: 6vw;
+  }
+  .contenedor{
+    display: flex;
+    gap: 4vw;
+  }
+  .punto{
+    width: 3vw;
+    height: 3vw;
+    margin-top: 2vw;
+  }
+  main h1 {
+    font-size: 6vw;
+    gap: 3vw;
+    align-items: center;
+  }
+  main h2 {
+    font-size: 5vw;
+  }
+}

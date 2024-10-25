@@ -74,3 +74,30 @@ header{
   text-transform: uppercase;
 }
 
+@media(width < 800px){
+  .play-video{
+    display: none;
+  }
+  .contenedor-play-video{
+    display: none;
+  }
+  header {
+    flex-direction: column;
+  }
+  .responsive-logo-play{
+    width: 100%;
+  }
+  .responsive-box{
+    width: 100%;
+    padding: 6vw;
+    border-radius: 6vw;
+  }
+  .responsive-box{
+    font-size: 10vw;
+  }
+  .subinfo{
+    font-size: 3.5vw;
+    margin-top: 20vw;
+  }
+}
+

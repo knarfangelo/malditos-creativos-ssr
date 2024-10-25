@@ -72,7 +72,7 @@ swiper-container{
   border-radius: 2vw;
   margin: 0;
   margin-right: auto;
-
+  overflow: hidden;
   background-color: #fff;
 }
 swiper-slide{
@@ -119,6 +119,7 @@ swiper-slide h2 {
     border-radius: 50%;
     background: #BB0B0B;
 }
+
 .punto-la{
     display: block;
     width: 1vw;
@@ -135,4 +136,82 @@ swiper-slide h2 {
   background-color: #BB0B0B;
   z-index: 6;
   transition: width 0.5s ease-in-out; /* Animación suave */
+}
+.slide-navigation-2{
+  display: none;
+}
+@media (width < 800px) {
+  .titulo{
+    gap: 2vw;
+  }
+  .punto{
+    width: 5vw;
+    height: 4.5vw;
+  }
+  .slide-navigation-2{
+    display: flex;
+    justify-content: space-between;
+  }
+  .slide-navigation-2 button{
+    width: 25vw;
+    height: 25vw;
+    background: #fff;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  .slide-navigation-2 button svg {
+    width: 8vw;
+    height: 8vw;
+  }
+  .active {
+    outline: 3vw solid #ffc8033a;
+  }
+
+  .button-slide{
+    flex-direction: column;
+  }
+  .slides-point {
+    width: 100%;
+    height: 20vw;
+    border-radius: 15vw;
+  }
+  .punto-la {
+    width: 3vw;
+    height: 3vw;
+  }
+  .contenedor-la{
+    width: 87vw;
+  }
+  .slides-point .linea{
+    width: 87vw;
+  }
+
+  swiper-container{
+    width: 100%;
+    height: 90vw;
+    border-radius: 5vw;
+    overflow: hidden;
+  }
+  swiper-slide {
+    flex-direction: column;
+    border-radius: 5vw; 
+    padding: 5vw;
+  }
+  swiper-slide h1 {
+    width: 100%;
+    font-size: 6vw;
+  }
+  swiper-slide h2 {
+    font-size: 6vw;
+    line-height: 6vw;
+    width: 100%;
+    font-weight: 500;
+    text-transform: initial;
+    text-align: left;
+  }
+  .slide-navigation{
+    display: none;
+  }
 }

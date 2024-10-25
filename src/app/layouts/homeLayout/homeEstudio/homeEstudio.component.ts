@@ -18,4 +18,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrl: './homeEstudio.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HomeEstudioComponent { }
+export class HomeEstudioComponent {
+  
+}

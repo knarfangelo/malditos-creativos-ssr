@@ -37,3 +37,20 @@ li{
 ul{
   gap: 1vw;
 }
+
+@media (width < 800px) {
+  .contenedor{
+    flex-direction: column;
+    height: auto;
+    gap: 5vw;
+    padding: 15vw;
+  }
+  ul{
+    flex-direction: column;
+    text-align: center;
+    gap: 8vw;
+  }
+  li{
+    font-size: 7vw;
+  }
+}

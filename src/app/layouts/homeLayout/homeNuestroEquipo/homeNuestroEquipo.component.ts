@@ -11,12 +11,13 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
     <header>
       <img class="equipo" src="equipo-trabajo/equipo-trabajo.webp" alt="equipo de trabajo">
       <main>
-        <h1><span class="punto"></span>Nuestro equipo de trabajo</h1>
+        <div class="contenedor">
+        <span class="punto"></span>
+        <h1>Nuestro equipo de trabajo</h1></div>
         <h2>mas de 10 expertos del <br> mundo digital <br>
         Enfocados en tu <br> desarrollo</h2>
       </main>
     </header>
-
   `,
   styleUrl: './homeNuestroEquipo.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

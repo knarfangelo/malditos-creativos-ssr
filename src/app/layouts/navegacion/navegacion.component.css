@@ -25,3 +25,14 @@ ul{
   display: flex;
   gap: 2vw;
 }
+nav-responsive{
+  display: none;
+}
+@media (width < 800px){
+  nav{
+    display: none;
+  }
+  nav-responsive{
+    display: flex;
+  }
+}

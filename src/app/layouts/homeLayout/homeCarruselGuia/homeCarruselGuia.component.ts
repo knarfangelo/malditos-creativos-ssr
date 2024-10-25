@@ -36,7 +36,7 @@ import { SwiperOptions } from 'swiper/types';
       <swiper-slide (mouseenter)="onHover(0)" (mouseleave)="onLeave()">
         <div class="titulo">
       <span class="punto"></span>
-        <h1>hablemos de tu visón</h1></div>      
+        <h1>hablemos de tu visión</h1></div>      
         <h2>Nos reunimos contigo para entender exactamente lo que necesitas. Ya sea un sitio web innovador, una transmisión de podcast profesional o contenido impactante.</h2>
       </swiper-slide>
       <swiper-slide (mouseenter)="onHover(1)" (mouseleave)="onLeave()">
@@ -64,6 +64,14 @@ import { SwiperOptions } from 'swiper/types';
         <h2>Una vez entregado el proyecto, nos gustaría recibir tus comentarios. Creemos en la retroalimentación para perfeccionar nuestro trabajo y adaptarnos a tus futuras necesidades.</h2>
       </swiper-slide>
     </swiper-container>
+    <div class="slide-navigation-2">
+      <button (click)="goToPrevSlide()"><svg xmlns="http://www.w3.org/2000/svg" width="2.5vw" height="2.5vw" viewBox="0 0 53 28" fill="none">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M52.4732 16.5255H9.0211L16.1315 24.3329L13.1757 27.0259L1.79199 14.526L13.1757 2.026L16.1315 4.71896L9.0211 12.5264H52.4732V16.5255Z" fill="#BB0B0B"/>
+      </svg></button>
+      <button (click)="goToNextSlide()"><svg xmlns="http://www.w3.org/2000/svg" width="2.5vw" height="2.5vw" viewBox="0 0 53 28" fill="none">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.167938 11.5479H43.62L36.5097 3.7405L39.4654 1.04744L50.8491 13.5474L39.4654 26.0474L36.5097 23.3544L43.62 15.5469H0.167938V11.5479Z" fill="#BB0B0B"/>
+      </svg></button>
+    </div>
     </header>
   `,
   styleUrl: './homeCarruselGuia.component.css',
@@ -91,10 +99,16 @@ export class HomeCarruselGuiaComponent implements OnInit {
         },
         loop: false,
         effect: 'fade',
+        cardsEffect: {
+          perSlideOffset: 30,
+          perSlideRotate: 35,
+          rotate: true,
+          slideShadows: false,
+        },
         fadeEffect: {
           crossFade: true, // Activa el crossFade para un efecto más suave
         },
-        slidesPerView: 'auto',
+        slidesPerView: 1,
         speed: 1000,
         on: {
           slideChange: () => {

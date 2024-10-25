@@ -33,16 +33,20 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
         <img src="/empresas/15-intercorp.webp" alt="Intercorp">
         <img src="/empresas/16-cesar-vallejo.webp" alt="Universidad César Vallejo">
       </section>
+      <button class="button-2">Contáctanos</button>
     </header>
     <section class="cliente">
       <div class="neutroyt">
-        <h1><span class="punto"></span>trabajamos con los mejores de la industria</h1>
+        <div class="formato">
+        <span class="punto"></span>
+        <h1>trabajamos con los mejores de la industria</h1></div>
         <h2>neutroooyt <br> 500K +</h2>
       </div>
       <div class="face">
         <img src="clientes/Murat-Soner.webp" alt="youtuber neutroooyt, Murat Soner">
       </div>
     </section>
+
   `,
   styleUrl: './homeNuestrosClientes.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
