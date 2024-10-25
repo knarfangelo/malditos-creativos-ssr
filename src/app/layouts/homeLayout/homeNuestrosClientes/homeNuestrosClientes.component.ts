@@ -1,11 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home-nuestros-clientes',
   standalone: true,
   imports: [
     CommonModule,
+    RouterLink
   ],
   template: `
     <header>
@@ -13,7 +15,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
         <div class="info">
         <h1><span class="punto"></span>Nuestros clientes</h1>
         <p>Más de 10 años de <br> experiencia en <br> todo tipo de <br> industrias</p></div>
-        <button>Contáctanos</button>
+        <button routerLink="/#contactanos">Contáctanos</button>
       </main>
       <section class="marcas">
         <img src="/empresas/1-speed-demons.webp" alt="speed demos">
