@@ -1,7 +1,6 @@
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { ChangeDetectionStrategy, Component, ElementRef, HostListener, Inject, PLATFORM_ID } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { defer } from 'rxjs';
 
 @Component({
   selector: 'app-home-nuestros-clientes',

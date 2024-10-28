@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, HostListener } from '@angular/core';
 import { IServicio, servicios } from './mantenimiento/servicios';
-import 'animate.css';
 
 @Component({
   selector: 'app-home-servicios',

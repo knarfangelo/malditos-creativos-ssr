@@ -1,7 +1,6 @@
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Inject, PLATFORM_ID, OnInit } from '@angular/core';
 import { trigger, style, animate, transition, state } from '@angular/animations';
-import 'animate.css';
 
 @Component({
   selector: 'app-home-cuerpo',
