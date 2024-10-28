@@ -18,7 +18,7 @@ import { IServicio, servicios } from './mantenimiento/servicios';
       </button>
       <main>
         @defer (on viewport) {
-      <h1 class="animate__animated animate__swing">CONOCE NUESTROS SERVICIOS</h1>
+      <h1>CONOCE NUESTROS SERVICIOS</h1>
       <p>SOMOS LOS MEJORES EN EL MUNDO DIGITAL</p>}
        @placeholder {
         <div></div>

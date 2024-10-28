@@ -65,18 +65,13 @@ import { RouterLink } from '@angular/router';
 export class HomeNuestrosClientesComponent {
   private readonly maxWidth: number = 47; // 47vw
   count: number = 0;
-  private start: number = 0;
-  private end: number = 500;
-  private duration: number = 2000; // Duración total de la animación en milisegundos
-  private startTime: number | null = null;
-
 
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {
-    if (isPlatformBrowser(this.platformId)) {
-      this.startCounting();
-    }
+
   }
+
+  
 
   @HostListener('mousemove', ['$event'])
   onMouseMove(event: MouseEvent) {
@@ -97,19 +92,4 @@ export class HomeNuestrosClientesComponent {
     }
   }
 
-  startCounting() {
-    const step = (timestamp: number) => {
-      if (!this.startTime) this.startTime = timestamp; // Inicializar el tiempo de inicio
-
-      const progress = timestamp - this.startTime; // Calcular el progreso de la animación
-      this.count = Math.min(Math.floor((progress / this.duration) * this.end), this.end); // Calcular el valor actual del contador
-
-      if (this.count < this.end) {
-        requestAnimationFrame(step); // Continuar la animación
-      }
-    };
-
-    requestAnimationFrame(step); // Iniciar la animación
-  }
- 
 }
