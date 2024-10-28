@@ -53,7 +53,7 @@ export const servicios: IServicio[] = [
         ]
     },
     {
-        titulo: 'Creacion de contenido',
+        titulo: 'Creación de contenido',
         img: '/servicios/creacion-contenido.webp',
         estilo: 'animate__animated animate__bounceInRight',
         numeros: [

@@ -94,7 +94,9 @@ header{
     border-radius: 6vw;
   }
   .responsive-box{
+    font-family: 'DM Sans ExtraBold';
     font-size: 10vw;
+    letter-spacing: -0.8vw;
   }
   .subinfo{
     font-size: 3.5vw;

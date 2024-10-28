@@ -1,14 +1,17 @@
 import { CommonModule, isPlatformBrowser } from '@angular/common';
-import { ChangeDetectionStrategy, Component, ElementRef, HostListener, Inject, PLATFORM_ID } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, HostListener, Inject, Input, PLATFORM_ID, SimpleChanges } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { BehaviorSubject } from 'rxjs';
+import { NumberCounterComponent } from "../../../components/numberCounter/numberCounter.component";
 
 @Component({
   selector: 'app-home-nuestros-clientes',
   standalone: true,
   imports: [
     CommonModule,
-    RouterLink
-  ],
+    RouterLink,
+    NumberCounterComponent
+],
   template: `
     <header>
       <main>
@@ -44,7 +47,10 @@ import { RouterLink } from '@angular/router';
         <span class="punto"></span>
         <h1>trabajamos con los mejores de la industria</h1></div></div>
         @defer (on viewport){
-        <h2>neutroooyt <br> {{count}}K +</h2>
+          
+        <h2>neutroooyt <br>
+        <app-number-counter [number]="500"
+      [duration]=".5"></app-number-counter></h2>
         } @placeholder {
           <div>neutroooyt <br> 500K +</div>
         }
@@ -64,15 +70,11 @@ import { RouterLink } from '@angular/router';
 })
 export class HomeNuestrosClientesComponent {
   private readonly maxWidth: number = 47; // 47vw
-  count: number = 0;
 
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {
 
   }
-
-  
-
   @HostListener('mousemove', ['$event'])
   onMouseMove(event: MouseEvent) {
     if (isPlatformBrowser(this.platformId)) {

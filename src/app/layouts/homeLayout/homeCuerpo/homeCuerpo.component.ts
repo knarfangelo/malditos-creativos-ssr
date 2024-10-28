@@ -9,7 +9,7 @@ import { trigger, style, animate, transition, state } from '@angular/animations'
   template: `
     <header >
       <div class="responsive-box animate__animated animate__bounceInLeft">
-        <div class="">
+        <div>
         Lideres en <br> estrategias<br>de marketing<br>digitalpara<br>tu empresa
         <br></div>
         <p class="subinfo">LA MEJOR OPCIóN CUANDO SE TRATA DE SER <br> TU PARTNER DIGITAL</p>

@@ -16,14 +16,15 @@ import { IServicio, servicios } from './mantenimiento/servicios';
       <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6115 1.10522V45.9922L23.2713 37.3335L25.2813 39.3432L13.1902 51.4327L1.09912 39.3432L3.10913 37.3335L11.7689 45.9922V1.10522H14.6115Z" fill="white"/>
       </svg>
       </button>
-      <main>
-        @defer (on viewport) {
+      @defer (on viewport) {
+      <main class="animate__animated animate__bounceInRight">
+       
       <h1>CONOCE NUESTROS SERVICIOS</h1>
-      <p>SOMOS LOS MEJORES EN EL MUNDO DIGITAL</p>}
-       @placeholder {
-        <div></div>
-       }
+      <p>SOMOS LOS MEJORES EN EL MUNDO DIGITAL</p>
       </main>
+      }@placeholder {
+        <div></div>  
+      }
     </header>
     <div class="servicios">
     @for (servicio of servicios; track $index) {

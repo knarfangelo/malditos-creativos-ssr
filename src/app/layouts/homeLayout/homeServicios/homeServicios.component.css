@@ -117,6 +117,9 @@ main p {
     height: 20vw;
   }
   main {
+    font-family: 'DM Sans ExtraBold';
+    font-size: 10vw;
+    letter-spacing: -0.3vw;
     width: 100%;
     text-align: center;
     border-radius: 5vw;
@@ -128,13 +131,16 @@ main p {
     font-weight: 900;
   }
   main p {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
   .servicios{
     flex-direction: column;
     gap: 2vw;
   }
   .card{
+    font-family: 'DM Sans ExtraBold';
+    font-size: 10vw;
+    letter-spacing: -0.3vw;
     width: 100%;
     gap: 20vw;
     border-radius: 5vw;

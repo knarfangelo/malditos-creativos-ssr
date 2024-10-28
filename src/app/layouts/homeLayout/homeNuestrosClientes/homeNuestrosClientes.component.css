@@ -160,6 +160,8 @@ main button, main a {
 .button-2{
   display: none;
 }
+
+
 @media (width < 800px){
   button, main .button-1{
     display: none;

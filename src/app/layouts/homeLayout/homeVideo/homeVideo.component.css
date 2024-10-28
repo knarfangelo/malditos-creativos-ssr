@@ -55,6 +55,9 @@ main h1 {
 
 @media (width < 800px) {
   header{
+    font-family: 'DM Sans ExtraBold';
+    font-size: 10vw;
+    letter-spacing: -0.3vw;
     flex-direction: column;
     padding: 1vw;
     padding-top: 0vw;
@@ -72,10 +75,10 @@ main h1 {
     border-radius: 5vw;
   }
   main h1{
-    font-size: 5vw;
+    font-size: 6vw;
   }
   .conoce-contenido .titulo{
-    font-size: 3vw;
+    font-size: 4vw;
   }
   .conoce-contenido svg{
     width: 10vw;
