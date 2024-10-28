@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, ViewportScroller } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { NavegacionComponent } from "../navegacion/navegacion.component";
 import { HomeCuerpoComponent } from "./homeCuerpo/homeCuerpo.component";
@@ -29,7 +29,7 @@ import { FooterComponent } from "../../components/footer/footer.component";
     HomeEstudioComponent,
     HomeEquiposGrabacionComponent,
     HomeSuscribirseComponent,
-    FooterComponent
+    FooterComponent,
 ],
   template: `
     <app-navegacion></app-navegacion>

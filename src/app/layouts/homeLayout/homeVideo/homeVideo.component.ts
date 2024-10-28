@@ -8,11 +8,14 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
     CommonModule,
   ],
   template: `
+    @defer (on viewport) {
       <header>
-        <div class="video">
+      
+        <div class="video animate__animated animate__backInLeft">
           VIDEO
         </div>
-        <main>
+        
+        <main class="animate__animated animate__bounceInRight">
           <h1>
           ¿Listo para desafiar <br>
           lo convencional?
@@ -25,6 +28,9 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
           </div>
         </main>
       </header>  
+      }@placeholder {
+        <div></div>
+      }
   `,
   styleUrl: './homeVideo.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

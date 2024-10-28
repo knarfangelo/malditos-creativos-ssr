@@ -1,21 +1,23 @@
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Inject, PLATFORM_ID, OnInit } from '@angular/core';
 import { trigger, style, animate, transition, state } from '@angular/animations';
+import 'animate.css';
 
 @Component({
   selector: 'app-home-cuerpo',
   standalone: true,
   imports: [CommonModule],
   template: `
-    <header>
-      <div class="responsive-box">
+    <header >
+      <div class="responsive-box animate__animated animate__bounceInLeft">
+        <div class="">
         Lideres en <br> estrategias<br>de marketing<br>digitalpara<br>tu empresa
-        <br>
+        <br></div>
         <p class="subinfo">LA MEJOR OPCIóN CUANDO SE TRATA DE SER <br> TU PARTNER DIGITAL</p>
       </div>
       <div class="responsive-logo-play">
-        <img class="logo" src="logo-malditos-creativos.svg" alt="logo-de-malditos-creativos">
-        <div class="contenedor-play-video">
+        <img class="logo animate__animated animate__bounceInDown" src="logo-malditos-creativos.svg" alt="logo-de-malditos-creativos">
+        <div class="contenedor-play-video animate__animated animate__bounceInRight">
         <button class="play-video" [@flyInOut]>
           <span class="button-text">Play video</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="1.1vw" height="1.1vw" viewBox="0 0 8 11" fill="none">

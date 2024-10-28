@@ -14,6 +14,7 @@ button{
   width: 15vw;
   height: 15vw;
   padding: 0;
+  rotate: 180deg;
   border-radius: 50%;
   background: #0319FF;
   border: 0;

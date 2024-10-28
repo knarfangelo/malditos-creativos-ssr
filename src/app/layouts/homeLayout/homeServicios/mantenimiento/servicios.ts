@@ -7,6 +7,7 @@ export interface estadistica{
 export interface IServicio {
     titulo: string;
     img: string;
+    estilo?: string;
     numeros: estadistica[];
 }
 
@@ -14,6 +15,7 @@ export const servicios: IServicio[] = [
     {
         titulo: 'Diseño Web',
         img: '/servicios/disenio-web.webp',
+        estilo: 'animate__animated animate__bounceInLeft',
         numeros: [
             {
                 titulo: 'INFLUENCERS',
@@ -33,6 +35,7 @@ export const servicios: IServicio[] = [
     {
         titulo: 'Stream & podcast',
         img: '/servicios/stream-podcast.webp',
+        estilo: 'animate__animated animate__fadeInUp',
         numeros: [
             {
                 titulo: 'INFLUENCERS',
@@ -52,6 +55,7 @@ export const servicios: IServicio[] = [
     {
         titulo: 'Creacion de contenido',
         img: '/servicios/creacion-contenido.webp',
+        estilo: 'animate__animated animate__bounceInRight',
         numeros: [
             {
                 titulo: 'IN 15 COUNTRIES',

@@ -89,6 +89,7 @@ header{
   }
   .responsive-box{
     width: 100%;
+    font-weight: 800;
     padding: 6vw;
     border-radius: 6vw;
   }
