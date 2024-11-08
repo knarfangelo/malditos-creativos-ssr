@@ -10,7 +10,7 @@ import { trigger, style, animate, transition, state } from '@angular/animations'
     <header >
       <div class="responsive-box animate__animated animate__bounceInLeft">
         <div>
-        capos en <br> estrategias<br>de marketing<br>digital para<br>ganar
+        capos <br> haciendo<br>marketing<br>digital para<br>ganar
         <br></div>
       </div>
       <div class="responsive-logo-play">
