@@ -12,14 +12,22 @@ header{
 
 .video{
   width: 32vw;
-  background-color: #fff;
+  background-color: #000;
   height: 32vw;
+  
   font-size: 3vw;
   font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 2vw;
+  overflow: hidden;
+
+}
+.video-mc{
+  border: 1px solid red;
+  width: 200vw;
+  height:40vw;
 }
 h1, h2, p{
   margin: 0;

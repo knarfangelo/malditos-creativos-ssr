@@ -10,15 +10,14 @@ import { trigger, style, animate, transition, state } from '@angular/animations'
     <header >
       <div class="responsive-box animate__animated animate__bounceInLeft">
         <div>
-        Lideres en <br> estrategias<br>de marketing<br>digitalpara<br>tu empresa
+        capos en <br> estrategias<br>de marketing<br>digital para<br>ganar
         <br></div>
-        <p class="subinfo">LA MEJOR OPCIóN CUANDO SE TRATA DE SER <br> TU PARTNER DIGITAL</p>
       </div>
       <div class="responsive-logo-play">
         <img class="logo animate__animated animate__bounceInDown" src="logo-malditos-creativos.svg" alt="logo-de-malditos-creativos">
         <div class="contenedor-play-video animate__animated animate__bounceInRight">
         <button class="play-video" [@flyInOut]>
-          <span class="button-text">Play video</span>
+          <span class="button-text">Activate</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="1.1vw" height="1.1vw" viewBox="0 0 8 11" fill="none">
             <path d="M0.0598145 0.329834L7.16981 5.30483L0.0598145 10.2798V0.329834Z" fill="white"/>
           </svg>

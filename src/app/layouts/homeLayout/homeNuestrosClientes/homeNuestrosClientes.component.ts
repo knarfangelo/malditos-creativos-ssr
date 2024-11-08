@@ -14,13 +14,18 @@ import { NumberCounterComponent } from "../../../components/numberCounter/number
 ],
   template: `
     <header>
+      @defer(on viewport){
       <main>
-        <div class="info">
-        <h1><span class="punto"></span>Nuestros clientes</h1>
-        <p>Más de 10 años de <br> experiencia en <br> todo tipo de <br> industrias</p></div>
+        <div class="info animate__animated animate__bounceInLeft">
+        <h1><span class="punto"></span>nuestros clientes ya no lloran <br> nuestros clientes facturan</h1>
+        <p>10 años en la <br> cancha con todo tipo de proyectos</p></div>
         <a class="button-1" href="#contactanos">Contáctanos</a>
-      </main>
-      <section class="marcas">
+      </main>}
+      @placeholder {
+        <div></div>
+      }
+      @defer(on viewport){
+      <section class="marcas animate__animated animate__bounceInRight">
         <img src="/empresas/1-speed-demons.webp" alt="speed demos">
         <img src="/empresas/2-cemex.webp" alt="Cemex">
         <img src="/empresas/3-olva.webp" alt="Olva Courier">
@@ -37,7 +42,9 @@ import { NumberCounterComponent } from "../../../components/numberCounter/number
         <img src="/empresas/14-jmt.webp" alt="JMT Outdoors">
         <img src="/empresas/15-intercorp.webp" alt="Intercorp">
         <img src="/empresas/16-cesar-vallejo.webp" alt="Universidad César Vallejo">
-      </section>
+      </section>} @placeholder {
+        <div></div>
+      }
       <a class="button-2" href="#contactanos">Contáctanos</a>
     </header>
     <section class="cliente">

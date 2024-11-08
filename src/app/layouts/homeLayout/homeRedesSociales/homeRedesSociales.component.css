@@ -9,7 +9,10 @@ header{
   gap: 0.5vw;
   font-family: "DM Sans", sans-serif;
 }
-
+.relleno{
+  width: 48.25vw;
+    height: 48.25vw;
+}
 .redes-sociales{
   background-color: #fff;
   width: 28.25vw;

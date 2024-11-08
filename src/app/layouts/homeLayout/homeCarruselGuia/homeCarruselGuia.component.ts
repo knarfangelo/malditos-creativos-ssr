@@ -13,26 +13,35 @@ import { SwiperOptions } from 'swiper/types';
   template: `
   <header>
   <div class="button-slide">
-    <div class="slides-point">
+    @defer(on viewport){
+    <div class="slides-point animate__animated animate__bounceInLeft">
     <div class="linea"></div>
-    <div class="contenedor-la">
-    <div class="linea-activa" [style.width]="lineWidth" ></div></div>
+    <div class="contenedor-la"> 
+    <div class="linea-activa" [style.width]="lineWidth" ></div>
+    </div>
       <span (click)="goToSlide(0)" class="punto-la"></span>
       <span (click)="goToSlide(1)" class="punto-la"></span>
       <span (click)="goToSlide(2)" class="punto-la"></span>
       <span (click)="goToSlide(3)"  class="punto-la"></span>
       <span  (click)="goToSlide(4)" class="punto-la"></span>
-    </div>
-    <div class="slide-navigation">
+    </div>} @placeholder {
+      <div></div>
+    }
+
+    @defer (on viewport) {
+    <div class="slide-navigation animate__animated animate__bounceInRight">
       <button (click)="goToPrevSlide()"><svg xmlns="http://www.w3.org/2000/svg" width="2.5vw" height="2.5vw" viewBox="0 0 53 28" fill="none">
       <path fill-rule="evenodd" clip-rule="evenodd" d="M52.4732 16.5255H9.0211L16.1315 24.3329L13.1757 27.0259L1.79199 14.526L13.1757 2.026L16.1315 4.71896L9.0211 12.5264H52.4732V16.5255Z" fill="#BB0B0B"/>
       </svg></button>
       <button (click)="goToNextSlide()"><svg xmlns="http://www.w3.org/2000/svg" width="2.5vw" height="2.5vw" viewBox="0 0 53 28" fill="none">
       <path fill-rule="evenodd" clip-rule="evenodd" d="M0.167938 11.5479H43.62L36.5097 3.7405L39.4654 1.04744L50.8491 13.5474L39.4654 26.0474L36.5097 23.3544L43.62 15.5469H0.167938V11.5479Z" fill="#BB0B0B"/>
       </svg></button>
-    </div>
+    </div>}@placeholder {
+    <div></div>
+    }
   </div>
-    <swiper-container init=false class="swiper-guia">
+  
+    <swiper-container init=false  id="swiper-guia" class="animate__animated animate__bounceInRight">
       <swiper-slide (mouseenter)="onHover(0)" (mouseleave)="onLeave()">
         <div class="titulo">
       <span class="punto"></span>
@@ -90,7 +99,7 @@ export class HomeCarruselGuiaComponent implements OnInit {
   ngOnInit() {
     if (isPlatformBrowser(this.platformId)) {
     register();
-    const swiperElemConstructor = document.querySelector('.swiper-guia');
+    const swiperElemConstructor = document.querySelector('#swiper-guia');
       const swiperOptions: SwiperOptions = {
         navigation:{
           enabled:true,
@@ -99,15 +108,6 @@ export class HomeCarruselGuiaComponent implements OnInit {
         },
         loop: false,
         effect: 'fade',
-        cardsEffect: {
-          perSlideOffset: 30,
-          perSlideRotate: 35,
-          rotate: true,
-          slideShadows: false,
-        },
-        fadeEffect: {
-          crossFade: true, // Activa el crossFade para un efecto más suave
-        },
         slidesPerView: 1,
         speed: 1000,
         on: {

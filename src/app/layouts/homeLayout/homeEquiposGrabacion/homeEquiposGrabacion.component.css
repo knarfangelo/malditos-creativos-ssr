@@ -10,7 +10,7 @@ header{
   flex-direction: column;
   gap: 0.5vw;
 }
-
+.relleno{width: 100vw; height: 6vw;}
 main{
   width: 100%;
   display: flex;

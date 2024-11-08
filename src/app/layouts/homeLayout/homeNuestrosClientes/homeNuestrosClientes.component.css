@@ -30,6 +30,8 @@ main button, main a{
   height: 1vw;
   border-radius: 50%;
   background-color: #000;
+  margin-bottom: auto;
+  margin-top: 0.2vw;
 }
 h1, p,h2 {
   margin: 0;

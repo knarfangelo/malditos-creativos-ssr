@@ -8,12 +8,15 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
     CommonModule,
   ],
   template: `
-    <header>
+  @defer (on viewport) {
+    <header class="animate__animated animate__bounceInLeft">
       <div class="info">
       <h1>Conoce <br>nuestro <br> estudio.</h1>
-      <h2>Estandares mas altos del mercado</h2></div>
+      <h2>gozando y facturando</h2></div>
       <img class="estudio" src="estudio/estudio.webp" alt="estudio choose agencia">
-    </header>
+    </header>} @placeholder {
+      <div class="relleno"></div>
+    }
   `,
   styleUrl: './homeEstudio.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

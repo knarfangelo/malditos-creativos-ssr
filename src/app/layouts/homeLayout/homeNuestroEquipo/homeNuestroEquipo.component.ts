@@ -9,14 +9,21 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   ],
   template: `
     <header>
-      <img class="equipo" src="equipo-trabajo/equipo-trabajo.webp" alt="equipo de trabajo">
-      <main>
+      @defer (on viewport) {
+      <img class="equipo animate__animated animate__bounceInLeft" src="equipo-trabajo/equipo-trabajo.webp" alt="equipo de trabajo">
+      }@placeholder {
+        <div></div>
+      }
+      @defer (on viewport){
+      <main class="animate__animated animate__bounceInRight">
         <div class="contenedor">
         <span class="punto"></span>
         <h1>Nuestro equipo de trabajo</h1></div>
-        <h2>mas de 10 expertos del <br> mundo digital <br>
-        Enfocados en tu <br> desarrollo</h2>
-      </main>
+        <h2>con más de 10 capos que harán realidad tus locuras.</h2>
+      </main>}
+      @placeholder {
+        <div></div>
+      }
     </header>
   `,
   styleUrl: './homeNuestroEquipo.component.css',

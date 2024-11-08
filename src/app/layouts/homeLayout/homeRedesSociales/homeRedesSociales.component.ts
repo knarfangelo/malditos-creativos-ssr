@@ -11,15 +11,19 @@ import { RouterLink } from '@angular/router';
   ],
   template: `
     <header>
-      <main>
+      @defer(on viewport){
+      <main class="animate__animated animate__bounceInLeft">
         <div class="contenedor">
           <span class="punto"></span>
-          <h1>Estamos en todas <br> las plataformas</h1>
+          <h1>DONDE MIRES <br> AHÍ ESTAREMOS</h1>
         </div>
-        <h2>ESTAMOS ORIENTADOS A LOS RESULTADOS. <br> SEA CUAL SEA LA PLATAFORMA</h2>
+        <h2>EN CADA UNA DE LAS REDES SOCIALES</h2>
       </main>
-
-      <section class="redes-sociales">
+      }@placeholder {
+        <div class="relleno"></div>
+      }
+      @defer(on viewport){
+      <section class="redes-sociales  animate__animated animate__bounceInRight">
         <ng-container *ngFor="let red of redes">
           <a [href]="red.src" target="_blank">
           <img 
@@ -30,7 +34,9 @@ import { RouterLink } from '@angular/router';
             [src]="red.img" 
             [alt]="red.alt"></a>
         </ng-container>
-      </section>
+      </section>} @placeholder {
+        <div class="relleno"></div>
+      }
     </header>
   `,
   styleUrls: ['./homeRedesSociales.component.css'],

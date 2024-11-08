@@ -14,7 +14,8 @@ import { equipos, IEquipo } from './matenimiento/equipo';
   template: `
     <header>
       <main>
-      <div class="flechas">
+        @defer (on viewport) {
+      <div class="flechas animate__animated animate__bounceInLeft">
         <button class="swiper-equipos-prev"><svg width="3vw" height="3vw" viewBox="0 0 52 26" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M51.6377 15.1389H8.18565L15.296 22.9463L12.3403 25.6393L0.956543 13.1394L12.3403 0.639404L15.296 3.33236L8.18565 11.1398H51.6377V15.1389Z" fill="#BB0B0B"/>
         </svg>
@@ -23,10 +24,16 @@ import { equipos, IEquipo } from './matenimiento/equipo';
         <path fill-rule="evenodd" clip-rule="evenodd" d="M0.332245 11.1612H43.7843L36.674 3.35378L39.6297 0.660719L51.0134 13.1607L39.6297 25.6606L36.674 22.9677L43.7843 15.1602H0.332245V11.1612Z" fill="#BB0B0B"/>
         </svg>
         </button>
-      </div>
-      <div class="titulo">
+      </div>} @placeholder {
+        <div></div>
+      }
+      @defer (on viewport){
+      <div class="titulo animate__animated animate__bounceInRight">
         <h1>CONOCE NUESTROS EQUIPOS <span>DE GRABACION Y FOTOGRAFÍA</span></h1>
-      </div>
+      </div>}
+      @placeholder {
+        <div class="relleno"></div>
+      }
       </main>
       <swiper-container init=false class="swiper-equipos">
         @for (equipo of equipos; track $index) {
