@@ -129,6 +129,40 @@ main{
 }
 
 
+
+
+
+.fullscreen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.fullscreen-card {
+  width: 90vw;
+  max-width: 800px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+h2{
+  color: #fff;
+}
+.fullscreen-card .encabezado,
+.fullscreen-card .plan-container {
+  /* Add any specific styling needed for the fullscreen view */
+}
+
+
 @media (width < 800px) {
   main{
     flex-direction: column;
