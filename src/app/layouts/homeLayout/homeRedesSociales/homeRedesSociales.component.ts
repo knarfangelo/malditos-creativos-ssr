@@ -25,7 +25,7 @@ import { RouterLink } from '@angular/router';
       @defer(on viewport){
       <section class="redes-sociales  animate__animated animate__bounceInRight">
         <ng-container *ngFor="let red of redes">
-          <a [href]="red.src" target="_blank">
+          <a target="_blank">
           <img 
             (mouseenter)="hovered = red"
             (mouseleave)="hovered = null"
@@ -50,7 +50,7 @@ export class HomeRedesSocialesComponent {
     { img: 'redes/tiktok.svg', alt: 'TikTok Malditos Creativos', src: 'https://www.tiktok.com/@malditoscreativosagencia?lang=en' },
     { img: 'redes/facebook.svg', alt: 'Facebook Malditos Creativos' },
     { img: 'redes/youtube.svg', alt: 'YouTube Malditos Creativos', src: 'https://www.youtube.com/@MalditosCreativosAgencia' },
-    { img: 'redes/xcorp.svg', alt: 'Twitter Malditos Creativos' },
+    { img: 'redes/xcorp.svg', alt: 'Twitter Malditos Creativos', src:'' },
     { img: 'redes/instagram.svg', alt: 'Instagram Malditos Creativos', src:'https://www.instagram.com/malditoscreativosagencia/' },
     { img: 'redes/vimeo.svg', alt: 'Vimeo Malditos Creativos' },
     { img: 'redes/kick.svg', alt: 'Kick Malditos Creativos' },
