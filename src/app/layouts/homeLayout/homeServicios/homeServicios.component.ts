@@ -18,7 +18,6 @@ import { IServicio, servicios } from './mantenimiento/servicios';
       @defer (on viewport) {
       <main class="animate__animated animate__bounceInRight">
         <h1>CONOCE NUESTRA CHAMBA</h1>
-        <p>SOMOS LOS MEJORES EN EL MUNDO DIGITAL</p>
       </main>
       }@placeholder {
         <div></div>  

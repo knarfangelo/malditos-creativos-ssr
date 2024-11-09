@@ -52,7 +52,7 @@ import { NumberCounterComponent } from "../../../components/numberCounter/number
         <div class="formato">
           <div class="titulacion">
         <span class="punto"></span>
-        <h1>trabajamos con los mejores de la industria</h1></div></div>
+        <h1>trabajamos con los mejores influencers de la industria</h1></div></div>
         @defer (on viewport){
           
         <h2>neutroooyt <br>

@@ -14,7 +14,7 @@ import { RouterLink } from '@angular/router';
       @defer(on viewport){
       <main class="animate__animated animate__bounceInLeft">
         <div class="contenedor">
-          <span class="punto"></span>
+       
           <h1>DONDE MIRES <br> AHÍ ESTAREMOS</h1>
         </div>
         <h2>EN CADA UNA DE LAS REDES SOCIALES</h2>
