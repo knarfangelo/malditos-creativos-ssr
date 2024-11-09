@@ -12,6 +12,7 @@ import { HomeEstudioComponent } from "./homeEstudio/homeEstudio.component";
 import { HomeEquiposGrabacionComponent } from "./homeEquiposGrabacion/homeEquiposGrabacion.component";
 import { HomeSuscribirseComponent } from "./homeSuscribirse/homeSuscribirse.component";
 import { FooterComponent } from "../../components/footer/footer.component";
+import { PlanPreciosComponent } from "./planPrecios/planPrecios.component";
 
 @Component({
   selector: 'app-home-layout',
@@ -30,6 +31,7 @@ import { FooterComponent } from "../../components/footer/footer.component";
     HomeEquiposGrabacionComponent,
     HomeSuscribirseComponent,
     FooterComponent,
+    PlanPreciosComponent
 ],
   template: `
     <app-navegacion></app-navegacion>
@@ -42,6 +44,7 @@ import { FooterComponent } from "../../components/footer/footer.component";
     <app-home-redes-sociales></app-home-redes-sociales>
     <app-home-estudio></app-home-estudio>
     <app-home-equipos-grabacion></app-home-equipos-grabacion>
+    <app-plan-precios></app-plan-precios>
     <app-home-suscribirse id="contactanos"></app-home-suscribirse>
     <app-footer></app-footer>
   `,

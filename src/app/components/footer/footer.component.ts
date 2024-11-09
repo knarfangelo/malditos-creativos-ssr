@@ -11,12 +11,12 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
     <footer>
       <div class="contenedor">
       <ul>
-        <li>INSTAGRAM</li>
-        <li>FACEBOOK</li>
-        <li>TIKTOK</li>
-        <li>TWITCH</li>
-        <li>X</li>
-        <li>YOUTUBE</li>
+        <li><a href="https://www.instagram.com/malditoscreativosagencia?igsh=dDdpOTZ2YTdubHh3" target="_blank">INSTAGRAM</a></li>
+        <li><a href="">FACEBOOK</a></li>
+        <li><a href="https://www.tiktok.com/@malditoscreativosagencia?_t=8rFgFTARROA&_r=1" target="_blank">TIKTOK</a></li>
+        <li><a href="">TWITCH</a></li>
+        <li><a href="https://x.com/AgenciaMalditos" target="_blank">X</a></li>
+        <li><a href="https://www.youtube.com/@malditoscreativosagencia" target="_blank">YOUTUBE</a></li>
       </ul>
       <ul>
         <li>todas los derechos reservados</li>

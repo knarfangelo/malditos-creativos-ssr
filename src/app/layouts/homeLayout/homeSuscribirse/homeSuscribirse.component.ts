@@ -11,6 +11,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
     <header>
       @defer(on viewport){
       <div class="cuadro-rojo animate__animated animate__bounceInLeft">
+        <img src="contactanos/contactanos.webp" alt="">
       </div>
       <main class="animate__animated animate__bounceInRight">
           <h1>nos tomamos unas <br> chelas ?</h1>
