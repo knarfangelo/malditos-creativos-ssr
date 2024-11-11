@@ -15,6 +15,7 @@ import { IPlanPrecios, planPrecios } from './mantenimiento/planPrecios';
 <button class="d-grafico" (click)="showFullscreenCard(items[1])">DISEÑO GRÁFICO</button>
 <button class="p-digital" (click)="showFullscreenCard(items[2])">PAQUETE DIGITAL</button>
     </section>
+    <div class="titulo-cel">SERVICIOS</div>
     <main>
       <section *ngFor="let item of items" 
                class="card" [ngClass]="{'fullscreen': selectedPlan === item}">
@@ -31,6 +32,11 @@ import { IPlanPrecios, planPrecios } from './mantenimiento/planPrecios';
             </ol>
           </div>
         </div>
+      </section>
+      <section class="cell-plans">
+        <img src="planes/disenio-web.webp" alt="">
+        <img src="planes/disenio-grafico.webp" alt="">
+        <img src="planes/paquete-digital" alt="">
       </section>
     </main>
 

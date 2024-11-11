@@ -112,7 +112,9 @@ h1 {
 @media (width < 800px){
   main{
     flex-direction: column;
-
+  }
+  header{
+    gap: 2vw;
   }
   .flechas-2{
     display: flex;

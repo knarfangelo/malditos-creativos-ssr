@@ -161,11 +161,44 @@ h2{
 .fullscreen-card .plan-container {
   /* Add any specific styling needed for the fullscreen view */
 }
-
-
+.titulo-cel{
+  display: none;
+}
+.card{
+  display: none;
+}
+.cell-plans{
+  display: none;
+}
 @media (width < 800px) {
   main{
     flex-direction: column;
+  }
+  .cell-plans{
+    display: flex;
+    flex-direction: column;
+    margin: 1vw;
+    gap: 2vw;
+    margin-bottom: 0;
+  }
+  .cell-plans img{
+    width: 100%;
+  }
+  .titulo-cel{
+    display: flex;
+    width: 100%;
+    height: 30vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    font-size: 5vw;
+    font-weight: bold;
+     box-sizing: border-box;
+    padding: 2vw;
+    background-color: #fff;
+    color: red;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30vw;
   }
   .buttons{
     display: none;

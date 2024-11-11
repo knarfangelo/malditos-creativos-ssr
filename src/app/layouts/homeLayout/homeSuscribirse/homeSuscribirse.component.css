@@ -12,7 +12,6 @@ h1, h2, p{
 }
 .cuadro-rojo{
   display: flex;
-  background-color: #BB0B0B;
   width: 42.5vw;
   height: 32.5vw;
   border-radius: 3vw;
@@ -87,6 +86,7 @@ main p {
   header{
     flex-direction: column;
     width: 100%;
+    gap: 2vw;
   }
   label{
     position: relative;

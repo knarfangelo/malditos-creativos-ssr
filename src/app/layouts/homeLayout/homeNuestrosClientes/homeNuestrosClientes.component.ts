@@ -17,7 +17,7 @@ import { NumberCounterComponent } from "../../../components/numberCounter/number
       @defer(on viewport){
       <main>
         <div class="info animate__animated animate__bounceInLeft">
-        <h1>nuestros clientes ya no lloran <br> nuestros clientes facturan</h1>
+        <h1><span class="punto" ></span> nuestros clientes ya no lloran <br> nuestros clientes facturan</h1>
         <p>10 años en la <br> cancha con todo tipo de proyectos</p></div>
         <a class="button-1" href="#contactanos">Contáctanos</a>
       </main>}
@@ -70,7 +70,6 @@ import { NumberCounterComponent } from "../../../components/numberCounter/number
         }
       </div>
     </section>
-
   `,
   styleUrl: './homeNuestrosClientes.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
