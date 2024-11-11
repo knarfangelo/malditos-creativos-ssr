@@ -10,15 +10,31 @@ import { IPlanPrecios, planPrecios } from './mantenimiento/planPrecios';
   ],
   template: `
   <header>
-    <section class="buttons">
-    <button class="d-web" (click)="showFullscreenCard(items[0])">DISEÑO WEB</button>
-<button class="d-grafico" (click)="showFullscreenCard(items[1])">DISEÑO GRÁFICO</button>
-<button class="p-digital" (click)="showFullscreenCard(items[2])">PAQUETE DIGITAL</button>
-    </section>
-    <div class="titulo-cel">SERVICIOS</div>
-    <main>
-      <section *ngFor="let item of items" 
-               class="card" [ngClass]="{'fullscreen': selectedPlan === item}">
+  <section class="buttons">
+  <button class="d-web" 
+          (mouseenter)="setHoveredItem(items[0])" 
+          (mouseleave)="clearHoveredItem()" 
+          >
+    DISEÑO WEB
+  </button>
+  <button class="d-grafico" 
+          (mouseenter)="setHoveredItem(items[1])" 
+          (mouseleave)="clearHoveredItem()" 
+          >
+    DISEÑO GRÁFICO
+  </button>
+  <button class="p-digital" 
+          (mouseenter)="setHoveredItem(items[2])" 
+          (mouseleave)="clearHoveredItem()" 
+          >
+    PAQUETE DIGITAL
+  </button>
+</section>
+
+<main>
+  <section *ngFor="let item of items" 
+           class="card" 
+           [ngClass]="{'zoomed': hoveredItem === item, 'fullscreen': selectedPlan === item}">
         <div class="encabezado">
           <img class="fondo" src="planes/bc-planes-1.png" alt="">
           <img class="sticker" src="planes/sticker.png" alt="">
@@ -42,7 +58,9 @@ import { IPlanPrecios, planPrecios } from './mantenimiento/planPrecios';
 
     <!-- Fullscreen Overlay for Selected Card -->
     <div *ngIf="selectedPlan" class="fullscreen-overlay" (click)="closeFullscreenCard()">
-      <section class="card fullscreen-card" (click)="$event.stopPropagation()">
+    <section *ngFor="let item of items" 
+           class="card" 
+           [ngClass]="{'zoomed': hoveredItem === item, 'fullscreen': selectedPlan === item}">
         <div class="encabezado">
           <img class="fondo" src="planes/bc-planes-1.png" alt="">
           <img class="sticker" src="planes/sticker.png" alt="">
@@ -66,6 +84,7 @@ import { IPlanPrecios, planPrecios } from './mantenimiento/planPrecios';
 export class PlanPreciosComponent { 
   items: IPlanPrecios[] = planPrecios;
   selectedPlan: IPlanPrecios | null = null;
+  hoveredItem: IPlanPrecios | null = null;
 
   showFullscreenCard(plan: IPlanPrecios) {
     this.selectedPlan = plan;
@@ -74,5 +93,15 @@ export class PlanPreciosComponent {
   closeFullscreenCard() {
     this.selectedPlan = null;
   }
+
+  setHoveredItem(item: IPlanPrecios) {
+    this.hoveredItem = item;
+  }
+
+  clearHoveredItem() {
+    this.hoveredItem = null;
+  }
 }
+
+  
 

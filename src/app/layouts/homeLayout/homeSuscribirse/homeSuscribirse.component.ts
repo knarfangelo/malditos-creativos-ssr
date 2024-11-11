@@ -17,7 +17,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
           <h1>nos tomamos unas <br> chelas ?</h1>
           <div class="contenedor">
           <label for="subscribe">
-            <input placeholder="TU CELAR" type="text" name="subscribe" id="subscribe">
+            <input placeholder="TU FONO" type="text" name="subscribe" id="subscribe">
             <span class="flecha"><svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
 <mask id="mask0_96_2434" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="1" y="1" width="63" height="63">
 <path d="M63.063 1.62695H1.12701V63.5629H63.063V1.62695Z" fill="white"/>

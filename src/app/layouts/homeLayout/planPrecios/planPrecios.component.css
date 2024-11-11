@@ -126,6 +126,7 @@ main{
 
 .buttons button{
   cursor: pointer;
+  border: 0;
 }
 
 
@@ -164,15 +165,34 @@ h2{
 .titulo-cel{
   display: none;
 }
-.card{
-  display: none;
-}
+
 .cell-plans{
   display: none;
 }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  gap: 2vw;
+  border-radius: 2vw;
+  overflow: hidden;
+  padding-bottom: 1.5vw;
+  transition: transform 0.3s ease; /* Suaviza el efecto de zoom */
+}
+
+.card.zoomed {
+  transform: scale(1.10); /* Efecto de zoom */
+  z-index: 20;
+}
+
+
 @media (width < 800px) {
   main{
     flex-direction: column;
+  }
+  .card{
+    display: none;
   }
   .cell-plans{
     display: flex;

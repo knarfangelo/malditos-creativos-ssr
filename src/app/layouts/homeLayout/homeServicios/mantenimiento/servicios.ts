@@ -18,16 +18,16 @@ export const servicios: IServicio[] = [
         estilo: 'animate__animated animate__bounceInLeft',
         numeros: [
             {
-                titulo: 'INFLUENCERS',
-                numeros: '550'
+                titulo: 'DESARROLLOS',
+                numeros: '57'
             },
             {
-                titulo: 'ACTIVATIONS',
-                numeros: '1,500'
+                titulo: 'VISUALIZACIONES',
+                numeros: '+250K'
             },
             {
-                titulo: 'COUNTRIES',
-                numeros: '30'
+                titulo: 'PAÍSES',
+                numeros: '15'
             },
 
         ]
@@ -38,16 +38,16 @@ export const servicios: IServicio[] = [
         estilo: 'animate__animated animate__fadeInUp',
         numeros: [
             {
-                titulo: 'INFLUENCERS',
-                numeros: '500'
+                titulo: 'GRABACIONES',
+                numeros: '69'
             },
             {
-                titulo: 'ACTIVATIONS',
-                numeros: '1,500'
+                titulo: 'HORAS DE CONTENIDO',
+                numeros: '5780'
             },
             {
-                titulo: 'COUNTRIES',
-                numeros: '15'
+                titulo: 'PAÍSES',
+                numeros: '3'
             },
 
         ]
@@ -58,16 +58,16 @@ export const servicios: IServicio[] = [
         estilo: 'animate__animated animate__bounceInRight',
         numeros: [
             {
-                titulo: 'IN 15 COUNTRIES',
-                numeros: '#1'
+                titulo: 'HORAS DE GRABACIÓN',
+                numeros: '+200'
             },
             {
-                titulo: 'INFLUENCERS',
-                numeros: '1,500'
+                titulo: 'DE REPRODUCCIONES',
+                numeros: '+5M'
             },
             {
-                titulo: 'ACTIVATIONS',
-                numeros: '2,000'
+                titulo: 'PLATAFORMAS',
+                numeros: '+7'
             },
 
         ]

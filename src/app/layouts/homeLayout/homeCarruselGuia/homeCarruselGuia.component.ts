@@ -46,31 +46,34 @@ import { SwiperOptions } from 'swiper/types';
         <div class="titulo">
       <span class="punto"></span>
         <h1>hablemos de tu visión</h1></div>      
-        <h2>Nos reunimos contigo para entender exactamente lo que necesitas. Ya sea un sitio web innovador, una transmisión de podcast profesional o contenido impactante.</h2>
+        <h2>Nos juntamos contigo para entender qué es lo que realmente necesitas. ¿Estás buscando una web que esté chévere y rompa todo? ¿Un podcast que tenga su propio estilo? ¿O contenido que deje huella? Lo que sea, estamos full listos para ayudarte.</h2>
       </swiper-slide>
       <swiper-slide (mouseenter)="onHover(1)" (mouseleave)="onLeave()">
         <div class="titulo">
       <span class="punto"></span>
         <h1>te presentamos un<br>plan a tu medida</h1></div>        
-        <h2>Tras entender tu visión, te presentamos una propuesta creativa que responde a tus necesidades, con soluciones diseñadas específicamente para ti, garantizando resultados de alto impacto.</h2>
+        <h2>Lo primero es que te entendemos al 100%. Queremos saber bien tu visión y qué es lo que buscas, para luego traerte una propuesta que esté full personalizada, hecha solo para ti. Nuestro objetivo es que lo que te entreguemos te pegue como esperas y tenga el impacto que buscas.
+        </h2>
       </swiper-slide>
       <swiper-slide (mouseenter)="onHover(2)" (mouseleave)="onLeave()">
         <div class="titulo">
       <span class="punto"></span>
         <h1>nos ponemos manos a <br>la obra</h1></div>      
-        <h2>Nuestro equipo de expertos comienza a trabajar en la creación, manteniéndote informado en cada etapa. Además, tendrás la oportunidad de revisar y ajustar para asegurarte de que el proyecto va en la dirección que imaginas.</h2>
+        <h2>Cuando ya estamos con todo listo, arrancamos con el equipo en modo creativo, tirando ideas y dándole forma a tu proyecto. Te vamos contando todo paso a paso, para que siempre estés al tanto de cómo vamos. Y si en algún momento te da ganas de hacer algún cambio o toque, no hay problema, lo ajustamos sin drama para que todo siga en la misma sintonía con tu idea.
+        </h2>
       </swiper-slide>
       <swiper-slide (mouseenter)="onHover(3)" (mouseleave)="onLeave()">
         <div class="titulo">
       <span class="punto"></span>
         <h1>¡Recibe tu proyecto <br> listo para brillar!</h1></div>        
-        <h2>Te entregamos el resultado final, optimizado y listo para impresionar a tu audiencia. Y, por supuesto, te ofrecemos soporte continuo para asegurarnos de que todo funcione a la perfección.</h2>
+        <h2>Cuando ya esté todo listo, te entregamos el resultado final optimizado, con todo pulido y listo para dejar a tu gente sorprendida. Y claro, seguimos contigo, dando soporte para que todo quede al 100% y sin problemas.
+        </h2>
       </swiper-slide>
       <swiper-slide (mouseenter)="onHover(4)" (mouseleave)="onLeave()">
         <div class="titulo">
       <span class="punto"></span>
         <h1>Evaluamos y <br> mejoramos juntos</h1>  </div>      
-        <h2>Una vez entregado el proyecto, nos gustaría recibir tus comentarios. Creemos en la retroalimentación para perfeccionar nuestro trabajo y adaptarnos a tus futuras necesidades.</h2>
+        <h2>Al final, lo que más nos importa es saber qué piensas. Tu feedback es clave para seguir mejorando, y así estar siempre listos para lo que venga. ¡Pensando pe, mi chibolo pulpin!</h2>
       </swiper-slide>
     </swiper-container>
     <div class="slide-navigation-2">

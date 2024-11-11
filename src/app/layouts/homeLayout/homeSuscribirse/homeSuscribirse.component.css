@@ -132,6 +132,7 @@ main p {
   }
   input{
     height: 19vw;
+    font-size: 6vw;
     padding-left: 5vw;
     border-radius: 10vw 0 0 10vw;
   }
