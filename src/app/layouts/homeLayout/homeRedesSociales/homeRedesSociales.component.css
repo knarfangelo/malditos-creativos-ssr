@@ -69,7 +69,9 @@ main h2 {
 @media (width < 800px){
   header{
     flex-direction: column-reverse;
-
+    padding: 2vw;
+    padding-bottom: 0;
+    gap: 2vw;
   }
   main{
     width: 100%;

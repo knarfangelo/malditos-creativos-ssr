@@ -185,8 +185,9 @@ main button, main a {
   }
   header{
     flex-direction: column;
-    padding: 1vw;
-    padding-top: 0vw;
+    padding: 2vw;
+    gap: 2vw;
+    padding-bottom: 0vw;
   }
   main{
     width: 100%;
@@ -224,6 +225,8 @@ main button, main a {
   .cliente{
     flex-direction: column-reverse;
     height: auto;
+    gap: 1vw;
+    padding-top: 2vw;
   }
   .cliente .face{
     width: 100%;
@@ -256,5 +259,4 @@ main button, main a {
   .cliente h2{
     font-size: 9vw;
   }
-
 }
