@@ -52,7 +52,7 @@ import { IPlanPrecios, planPrecios } from './mantenimiento/planPrecios';
       <section class="cell-plans">
         <img src="planes/disenio-web.webp" alt="">
         <img src="planes/disenio-grafico.webp" alt="">
-        <img src="planes/paquete-digital" alt="">
+        <img src="planes/paquete-digital-3.webp" alt="">
       </section>
     </main>
 
