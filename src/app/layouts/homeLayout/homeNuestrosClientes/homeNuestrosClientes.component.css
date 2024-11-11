@@ -195,6 +195,7 @@ main button, main a {
   .info{
     height:90vw;
     border-radius: 5vw;
+    letter-spacing: -0.5vw;
   }
   .info h1 {
     font-size: 7vw;
