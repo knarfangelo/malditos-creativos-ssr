@@ -16,13 +16,17 @@ h1, h2, p {
 }
 
 .equipo{
-  width: 48.25vw;
-  height: 48.25vw;
+  width: 100%;
+  height: 100%;
+  border-radius: 3vw;
+}
+swiper-container{
+  width: 60.25vw;
   border-radius: 3vw;
 }
 
 main {
-  width: 48.25vw;
+  width: 46.25vw;
   height: 48.25vw;
   background: #0319FF;
   border-radius: 3vw;
