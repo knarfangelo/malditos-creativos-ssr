@@ -72,6 +72,14 @@ h1, p,h2 {
   object-fit: contain;
   object-position: center;
 }
+.marcas > img:nth-child(13){
+  grid-column: 2/3;
+
+}
+.marcas > img:nth-child(14){
+  grid-column: 3/4;
+}
+
 
 
 .info p, .info h1 {

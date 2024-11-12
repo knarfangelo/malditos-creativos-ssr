@@ -27,7 +27,6 @@ import { NumberCounterComponent } from "../../../components/numberCounter/number
       @defer(on viewport){
       <section class="marcas animate__animated animate__bounceInRight">
         <img src="/empresas/1-speed-demons.webp" alt="speed demos">
-        <img src="/empresas/2-.webp" alt="Cemex">
         <img src="/empresas/3-olva.webp" alt="Olva Courier">
         <img src="/empresas/4-saludpol.webp" alt="Saludpol">
         <img src="/empresas/5-reed.webp" alt="Reed">
@@ -36,7 +35,6 @@ import { NumberCounterComponent } from "../../../components/numberCounter/number
         <img src="/empresas/8-valle-del-cauca.webp" alt="Valle del Cauca">
         <img src="/empresas/9-santiago.webp" alt="Santiago Consultores">
         <img src="/empresas/10-jrm.webp" alt="JRM">
-        <img src="/empresas/11-.webp" alt="Alcaldía de Panamá">
         <img src="/empresas/12-claro.webp" alt="Telefonia Claro">
         <img src="/empresas/13-css-panama.webp" alt="CSS Panamá">
         <img src="/empresas/14-jmt.webp" alt="JMT Outdoors">
