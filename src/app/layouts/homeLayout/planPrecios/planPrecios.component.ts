@@ -64,7 +64,7 @@ import { IPlanPrecios, planPrecios } from './mantenimiento/planPrecios';
         <div class="encabezado">
           <img class="fondo" src="planes/bc-planes-1.png" alt="">
           <img class="sticker" src="planes/sticker.png" alt="">
-          <h2>{{ selectedPlan?.title }}</h2>
+          <h2>{{ selectedPlan.title }}</h2>
         </div>
         <div class="plan-container">
           <div *ngFor="let plan of selectedPlan?.plans" class="info">

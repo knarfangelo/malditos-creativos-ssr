@@ -60,6 +60,9 @@ main h2 {
   display: flex;
   gap: 1vw;
 }
+.contenedor h1{
+  line-height: 1.1;
+}
 .contenedor .punto{
   width: 1.5vw;
   border-radius: 50%;
