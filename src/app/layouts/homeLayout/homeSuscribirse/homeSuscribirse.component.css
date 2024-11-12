@@ -73,6 +73,9 @@ main p {
   color: #BB0B0B;
   font-weight: 700;
 }
+.cuadro-rojo img{
+  object-fit: cover;
+}
 .contenedor{
   display: flex;
   flex-direction: column;
@@ -112,6 +115,7 @@ main p {
   .cuadro-rojo{
     width: 100%;
     height: 85vw;
+    overflow: hidden;
   }
   .cuadro-rojo img{
     width: 100% ;
