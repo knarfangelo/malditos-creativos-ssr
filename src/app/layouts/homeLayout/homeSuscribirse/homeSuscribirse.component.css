@@ -32,6 +32,7 @@ main{
 }
 label{
   display: flex;
+  gap: 1vw;
 }
 main h1{
   font-size: 3vw;
@@ -39,7 +40,7 @@ main h1{
   color: #BB0B0B;
 }
 input {
-  border-radius: 5vw 0 0 5vw;
+  border-radius: 5vw;
   width: 80%;
   height: 4vw;
   padding: 0;
@@ -55,12 +56,17 @@ input::placeholder{
   font-weight: bold;
   font-size: 2.5vw;
 }
+.nombre{
+  width: 80%;
+  border-radius: 5vw;
+}
 .boton{
   display: flex;
   color: #fff;
   align-items: center;
   justify-content: center;
-  border-radius: 0 5vw 5vw 0;
+  border-radius: 5vw;
+  font-weight:bold;
   background-color: #BB0B0B;
   outline: 0.2vw solid #BB0B0B;
   font-size: 1vw;
@@ -84,6 +90,11 @@ main p {
 .flecha{
   display: none;
 }
+.reaccion{
+  font-size: 3vw;
+  font-family: "DynaPuff", system-ui;
+  color: #BB0B0B;
+}
 @media (width < 800px){
 
   header{
@@ -91,6 +102,7 @@ main p {
     width: 100%;
     gap: 2vw;
   }
+  
   label{
     position: relative;
   }
@@ -146,5 +158,9 @@ main p {
   }
   main p{
     font-size: 4vw;
+  }
+  .nombre{
+    width: 90%;
+    border-radius: 10vw;
   }
 } 

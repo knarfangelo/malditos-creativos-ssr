@@ -1,0 +1,11 @@
+{
+    "/api": {
+      "target": "https://malditoscreativos.com/api/api.php",
+      "secure": true,
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/api": ""
+      }
+    }
+  }
+  
