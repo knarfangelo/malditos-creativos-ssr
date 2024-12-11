@@ -13,6 +13,7 @@ import { HomeEquiposGrabacionComponent } from "./homeEquiposGrabacion/homeEquipo
 import { HomeSuscribirseComponent } from "./homeSuscribirse/homeSuscribirse.component";
 import { FooterComponent } from "../../components/footer/footer.component";
 import { PlanPreciosComponent } from "./planPrecios/planPrecios.component";
+import { WhatsappComponent } from "../../components/whatsapp/whatsapp.component";
 
 @Component({
   selector: 'app-home-layout',
@@ -31,7 +32,8 @@ import { PlanPreciosComponent } from "./planPrecios/planPrecios.component";
     HomeEquiposGrabacionComponent,
     HomeSuscribirseComponent,
     FooterComponent,
-    PlanPreciosComponent
+    PlanPreciosComponent,
+    WhatsappComponent
 ],
   template: `
     <app-navegacion></app-navegacion>
@@ -47,6 +49,7 @@ import { PlanPreciosComponent } from "./planPrecios/planPrecios.component";
     <app-plan-precios></app-plan-precios>
     <app-home-suscribirse id="contactanos"></app-home-suscribirse>
     <app-footer></app-footer>
+    <app-whatsapp></app-whatsapp>
   `,
   styleUrl: './homeLayout.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

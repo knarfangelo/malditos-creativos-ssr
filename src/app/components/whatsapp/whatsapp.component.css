@@ -1,0 +1,22 @@
+.whatsapp {
+  position: fixed;
+  z-index: 100;
+  bottom: 20px;
+  right: 20px;
+  width: 80px;
+}
+
+.whatsapp img {
+  width: 100%;
+  height: auto;
+  animation: levitation 1s infinite ease-in-out;
+}
+
+@keyframes levitation {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
