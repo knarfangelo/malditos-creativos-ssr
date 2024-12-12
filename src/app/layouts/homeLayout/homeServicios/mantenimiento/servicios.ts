@@ -72,4 +72,23 @@ export const servicios: IServicio[] = [
 
         ]
     },
+    {
+        titulo: 'Representación de influencers',
+        img: '/servicios/influencers.webp',
+        estilo: 'animate__animated animate__bounceInRight',
+        numeros: [
+            {
+                titulo: 'INFLUENCERS',
+                numeros: '+10'
+            },
+            {
+                titulo: 'DE SEQUIDORES',
+                numeros: '+10M'
+            },
+            {
+                titulo: 'PAISES',
+                numeros: '+10'
+            },
+        ]
+    },
 ]
